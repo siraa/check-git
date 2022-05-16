@@ -1,0 +1,33 @@
+ALGORITHM algorithm_name
+
+
+
+VAR
+   ch  :STRING
+   i,j: INTEGER := 0
+   voyelle :
+   
+   
+
+BEGIN
+
+
+FOR i:=0 FROM i:=1 TO i.length() DO
+    IF (a in [a,e,u,i,o,y,A,E,U,I]) THEN
+     nb_v :=nb_v+1 ;
+
+  END_IF
+END_FOR
+
+FOR j:=0 FROM j:=1 TO j.length() && (c='.')   DO
+    IF (ch=" ") THEN
+      nb_space:=nb_space+1;
+    ELSE
+      nb_car:=nb_car+1;
+    END_IF
+END_FOR
+  
+ 
+
+END
+
