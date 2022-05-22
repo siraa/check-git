@@ -1,0 +1,22 @@
+ALGORITHM algorithm_name
+VAR
+    settab1 : ARRAY_OF type[4]:= [3,1,7,9];
+    settab2 : ARRAY_OF type[5]:= [2,4,1,9,3];
+    tab:ARRAY_OF INTEGER[];
+    result:BOOLEAN;
+    sum:INTEGER :=0;
+BEGIN
+    tab:=concat(settab1,settab2)
+    FOR i FROM 0 TO  tab.legth() DO
+    result:=false
+    FOR j FROM 0 TO  tab.legth() DO
+       IF (tab[i])=tab[j] And i<>j THEN
+          result:=true
+          break;
+       END_IF
+    END_FOR
+    IF (result=false) THEN
+        sum:=sum+tab[i]
+    END_IF
+    END_FOR
+END
