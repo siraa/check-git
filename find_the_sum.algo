@@ -1,22 +1,27 @@
-ALGORITHM algorithm_name
+ALGORITHM find_sum
 VAR
     settab1 : ARRAY_OF type[4]:= [3,1,7,9];
     settab2 : ARRAY_OF type[5]:= [2,4,1,9,3];
+    hashtab : ARRAY_OF INTEGER[];
     tab:ARRAY_OF INTEGER[];
     result:BOOLEAN;
     sum:INTEGER :=0;
 BEGIN
     tab:=concat(settab1,settab2)
-    FOR i FROM 0 TO  tab.legth() DO
-    result:=false
-    FOR j FROM 0 TO  tab.legth() DO
-       IF (tab[i])=tab[j] And i<>j THEN
-          result:=true
-          break;
-       END_IF
+    FOR i:=1 FROM 1 TO  tab.length() DO
+   
+   IF (lookup(tab[i]):=false) THEN
+        hashtab.insert[tab[i],1]
+   ELSE
+      hashtab.insert(tab[i])
+      hashtab.get(tab[i]+1)
+
+   END_IF
+    FOR j:=1 FROM 1 TO  hashtab.length() DO
+      IF (lookup([j]):=true) THEN
+
+          
+      END_IF
     END_FOR
-    IF (result=false) THEN
-        sum:=sum+tab[i]
-    END_IF
-    END_FOR
+
 END
