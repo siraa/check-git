@@ -12,7 +12,8 @@ VAR
 //    BEGIN
        
 // FOR i:=1 FROM  i.length() TO pro+(v1*v2) DO
-    
+   //  ********************Function **************************
+   
 FUNCTION dotProduct(vec1,vect2) : arr
 VAR
 result :=0;
@@ -24,7 +25,7 @@ BEGIN
    RETURN result ;
 END
 
-
+// ****************************************************
 
 
 
