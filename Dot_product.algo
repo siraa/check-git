@@ -1,0 +1,42 @@
+ALGORITHM dot_product
+VAR
+ 
+
+ prod :INTEGER := 0;
+ INTEGER arr v1, v2 (1::3);
+
+
+// PROCEDURE dotProduct()
+//    VAR
+ 
+//    BEGIN
+       
+// FOR i:=1 FROM  i.length() TO pro+(v1*v2) DO
+    
+FUNCTION dotProduct(vec1,vect2) : arr
+VAR
+result :=0;
+
+BEGIN
+ FOR i:=1 FROM 1 TO i<vect.length()  DO
+    result:=result+(vec1[i]*vect2[i])
+ END_FOR
+   RETURN result ;
+END
+
+
+
+
+
+BEGIN
+   
+FOR i:=1 FROM i TO i<vect.length()   DO
+ FOR j:1 FROM j TO j<vect.length()  DO
+
+    IF (dotProductv(v[i],v[j]===0)) THEN
+       write("vectors[i] and vectors[j] are orthogonal ")
+    END_IF
+ END_FOR
+END_FOR   
+
+END
